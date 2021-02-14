@@ -43,4 +43,6 @@ test:
 .PHONY: rel
 rel:
 	GOOS=darwin GOARCH=amd64 go build -o await-darwin-amd64
+	GOOS=darwin GOARCH=arm64 go build -o await-darwin-arm64
 	GOOS=linux  GOARCH=amd64 go build -o await-linux-amd64
+	GOOS=linux  GOARCH=arm64 go build -o await-linux-arm64
